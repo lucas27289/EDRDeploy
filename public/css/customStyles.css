@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+:root {
+    --color-background: #000000;
+    --color-red-ligther: #942f2d;
+    --color-red: #730908;
+    --color-red-darker: #5f0907;
+    --color-violet-ligther: #9065bd;
+    --color-violet: #6E32AE;
+    --color-violet-darker: #4f227f;
+}
+
+.f-ptSans{
+    font-family: 'PT Sans', sans-serif;
+}
+.f-russo {
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Background Colors */
+.bg-custom-dark {
+    background-color: var(--color-background);
+}
+.bg-white {
+    background-color: #FFFFFF;
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+.bg-grey {
+    background-color: rgb(40, 40, 40);
+}
+
+/* Borders */
+.grey-border-color {
+    border-color: grey !important;
+}
+.redToVioletBorderColor {
+    border-bottom: 3px solid !important;
+    border-image: linear-gradient(to right, var(--color-red), var(--color-violet));
+    border-image-slice: 1;
+}
+.redToVioletBorderColorRight {
+    border-right: 3px solid !important;
+    border-image: linear-gradient(to top, var(--color-red), var(--color-violet));
+    border-image-slice: 1;
+}
+.allBorders {
+    border: 2px solid transparent !important;
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    border-radius: 5px;
+}
+.borderRedToViolet {
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 3px solid transparent !important;
+    border-radius: 25px;
+    height: 50px;
+  }
+
+.rounded-left {
+    border-radius: 5000px 0 0 5000px;
+}
+.rounded-30px {
+    border-radius: 30px;
+}
+
+/* Alerts */
+.alert-info {
+    background: linear-gradient(to left, var(--color-red-ligther), var(--color-violet-ligther))
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    border-radius: 5px;
+    color: var(--color-background);
+    border: 2px solid transparent !important;
+    font-weight: bold;
+}
+
+/* Text */
+.blur-text {
+    color: #FFFFFF;
+    -webkit-text-fill-color: #FFFFFF; /* for Safari */
+    -webkit-mask-image: linear-gradient(to left, black 0%, black 100%);
+    mask-image: linear-gradient(to left, black 0%, black 100%);
+    filter: blur(1px);
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #6E32AE;
+
+}
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color:var(--color-red); /* Color del pulgar */
+  }
+  ::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: var(--color-violet); /* Color de fondo de la pista */
+  }
+  
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(#994CFB, #A048FE)
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent !important;
+    border-radius: 10px;
+}
+.btn-primary:hover {
+    background: linear-gradient(#8232eb, #7e2ad8)
+    padding-box, linear-gradient(to right, var(--color-red-darker), var(--color-violet-darker)) border-box;
+}
+.btn-primarySquare {
+    background: linear-gradient(#994CFB, #A048FE)
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent !important;
+    border-radius: 2px;
+}
+.btn-primarySquare:hover {
+    background: linear-gradient(#8232eb, #7e2ad8)
+    padding-box, linear-gradient(to right, var(--color-red-darker), var(--color-violet-darker)) border-box;
+}
+.btn:focus {
+    box-shadow: none !important;
+    
+}
+.btn-white-text {
+    color: #FFFFFF;
+    background: none !important;
+}
+.btn-white-text:hover {
+    color: #FFFFFF;
+    background: none !important;
+}
+.btn-grey {
+    color: white;
+    background-color: #828282;
+}
+.btn-grey:hover {
+    color: white;
+    background-color: #6a6a6a;
+}
+
+/* Font  colors */
+.f-white {
+    color: #FFFFFF;
+}
+
+/* Heights */
+.h-15px {
+    height: 15px;
+}
+.h-24px {
+    height: 24px;
+}
+.h-30px {
+    height: 30px;
+}
+.h-40px {
+    height: 40px;
+}
+.h-60px {
+    height: 60px;
+}
+.maxw-1200px {
+    max-width: 1200px;
+}
+.maxw-1300px {
+    max-width: 1300px;
+}
+.maxw-1500px {
+    max-width: 1500px;
+}
+.minh-500px {
+    min-height: 500px;
+}
+.minh-100{
+    min-height: 100%;
+}
+
+/* svg */
+.dark-filled {
+    fill: #000000;
+}
+/* Widths */
+.w-15px {
+    width: 15px;
+}
+.w-24px {
+    width: 24px;
+}
+.w-40px {
+    width: 40px;
+}
+.w-60px {
+    width: 60px;
+}
+.minw-100 {
+    min-width: 100%;
+}
+
+/* Background Images */
+.bgImage {
+    background-image: url('../img/fondo-02.svg');
+    background-size: cover;
+    background-position: top left;
+    background-repeat:  no-repeat;
+    z-index: 0;
+}
+.triangulo {
+    background-image: url('../img/formaNegra.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 800px;
+
+}
+.bgImage2 {
+    background-image: url("../img/formaNegra2.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 70px;
+}
+.zIndex-10{
+    z-index: 10;
+}
+.heroSection {
+    top: 20%;
+    left: 15%;
+}
+.header2 {
+    height: 140px;
+    border-radius: 100px 0 0 100px;
+}
+.lineas {
+    /*background-image: url('../img/fondoNegro.png');
+    background-position: center;
+    background-repeat: no-repeat;*/
+    background-size: contain;
+}
+.coursesSection {
+    margin-top: -100px !important;
+    position: relative;
+    background-color: var(--color-background);
+    border-radius: 40px;
+    z-index: 10000 !important;
+}
+.coursesSection::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 25px;
+    background: linear-gradient(to left, var(--color-red), var(--color-violet)) border-box;
+    border: 3px solid transparent;
+    border-bottom:  none !important;
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+          mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    top:-25px;
+    left:10%;
+    z-index: -1 !important;
+}
+.coursesSection::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 25px;
+    background: linear-gradient(to left, var(--color-red), var(--color-violet)) border-box;
+    border: 3px solid transparent;
+    border-top:  none !important;
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+          mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    bottom:-25px;
+    left:10%;
+    z-index: -1 !important;
+}
+.randomLinea {
+    background-image: url('../img/lineas.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 800px;
+    margin-top: 80px;
+    padding: 50px 30px;
+}
+.forma1 {
+    position:relative;
+    background-color: var(--color-background);
+    padding: 5px;
+    border-radius: 20px;
+    z-index: 0 !important;
+}
+.forma1::before {
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    border: 3px solid transparent;
+    -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+          mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+    transform: rotate(-37deg);
+    border-radius: 999px;
+    z-index: -1 !important;
+}
+.forma1::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 22%;
+    background: var(--color-background);
+    top: 0;
+    left: 0;
+    transform: skew(15deg) translateX(-50%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index:0;
+}
+.zIndex-5 {
+    z-index: 5;
+}
+
+.decorationForm {
+    transform: rotate(-37deg);
+    border-radius: 1000px;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 1;
+}
+.rayo {
+    background: linear-gradient(to right, var(--color-red), var(--color-violet));
+    height: 2px;
+    width: 10%;
+    z-index: 1;
+}
+.courseborderVR {
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to left, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+}
+.courseborderRV {
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+}
+.topSideBordersRV {
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-bottom: 0px;
+    border-radius: 25px 25px 0 0;
+    width: fit-content;
+}
+.topSideBordersVR {
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to left, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-bottom: 0px;
+    border-radius: 25px 25px 0 0;
+    width: fit-content;
+}
+.topSideBordersRVBW {
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-bottom: 0px;
+    border-radius: 25px 25px 0 0;
+    width: fit-content;
+}
+.topSideBordersVRBW {
+    background: linear-gradient(var(--color-background), var(--color-background))
+    padding-box, linear-gradient(to left, var(--color-red), var(--color-violet)) border-box;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-bottom: 0px;
+    border-radius: 25px 25px 0 0;
+    width: fit-content;
+}
+.ball {
+    position: relative;
+    width: 300vw;
+    height: 100%;
+    clip-path: ellipse(60% 90% at 50% 100%);
+}
+footer {
+    background-image: url('../img/footer.svg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:50vw;
+}
+.footerText{
+    transform: translateY(40%);
+}
+.forma1-sm {
+    border-radius:1rem;
+    box-shadow: white 0px 0px 20px;
+
+}
+.bg-violet {
+    background-color: var(--color-violet) !important;
+}
+.infraImg{
+    border-radius: 0px;
+    width: 100%;
+}
+.text-stroke-1::before{
+    content: 'Bienvenidos a';
+}
+.text-stroke-2::before{
+    content: 'Escuela de Rap';
+}
+.text-stroke-3::before{
+    content: 'MÉTODOS DE';
+}
+.text-stroke-4::before{
+    content: 'ENTRENAMIENTO';
+}
+.text-stroke-5::before {
+    content: 'EL legado de todos,';
+}
+.text-stroke-7::before{
+    content: 'ENTERATE SOBRE SEMINARIOS GRATUITOS,';
+}
+.text-stroke-8::before{
+    content: "CLASES ABIERTAS, CHARLAS CON MC'S,";
+}
+.text-stroke-9::before{
+    content: 'ACTUALIDA Y SORTEOS.';
+}
+.text-stroke-1::before, 
+.text-stroke-2::before, 
+.text-stroke-3::before, 
+.text-stroke-4::before,
+.text-stroke-5::before,
+.text-stroke-7::before,
+.text-stroke-8::before,
+.text-stroke-9::before {
+    position:absolute;
+    width: 90%;
+    font-family: 'Russo One', sans-serif;
+    color: transparent;
+    left: 25px;
+    -webkit-text-stroke: 0.5px rgba(255,255,255,0.4);
+    z-index: -1;
+}
+.text-stroke-6::before {
+    content: 'EL ARTE DE CADA UNO';
+    background-color: var(--color-violet);
+    font-size: 1.3rem;
+    position:absolute;
+    font-family: 'Trade Winds', cursive;
+    color: transparent;
+    left: 25px;
+    transform: translateY(-5px);
+    padding: auto;
+    -webkit-text-stroke: 0.5px rgba(255,255,255,0.4);
+    z-index: -1;
+}
+#instaBtn{
+    text-align: start;
+}
+
+@media screen and (max-width: 767px) {
+    .redToVioletBorderColorRight {
+        border-right: none !important;
+    }
+    .coursesSection {
+        margin-top: 50px !important;
+    }
+    .randomLinea {
+        background-image: none;
+    }
+    .forma1::after {
+        display: none;
+    }
+    .topSideBordersRVBW {
+        background: linear-gradient(white, white)
+        padding-box, linear-gradient(to right, var(--color-red), var(--color-violet)) border-box;
+        color: #000000;
+        border-radius: 10px 10px 0 0;
+    }
+    .topSideBordersVRBW {
+        background: linear-gradient(white, white)
+        padding-box, linear-gradient(to left, var(--color-red), var(--color-violet)) border-box;
+        color: #000000;
+        border-radius: 10px 10px 0 0;
+    }
+    .courseborderVR, .courseborderRV {
+        border-radius: 4px;
+    }
+    .infraImg {
+        border-radius: 100%;
+        width: 50%;
+    }
+    .triangulo {
+        min-height: 600px;
+    
+    }
+    .randomLinea{
+        background-image: none;
+    }
+    footer{
+        background-image: none;
+        background: linear-gradient(45deg, var(--color-violet-darker), var(--color-background));
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+    .footerText {
+        transform: translateY(0);
+    }
+    .text-stroke-7::before,
+    .text-stroke-8::before,
+    .text-stroke-9::before  {
+        display:none
+    }
+    #instaBtn{
+        text-align: center;
+    }
+     
+}
