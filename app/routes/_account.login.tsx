@@ -16,7 +16,7 @@ export let loader:LoaderFunction = async ({ request }) => {
 
 
 export let action:ActionFunction = async ({ request }) => {
-    let formData = await request.formData();
+    let formData = await request.formData(); 
 
     let email = formData.get('email')?.toString();
     let password = formData.get('password')?.toString();
