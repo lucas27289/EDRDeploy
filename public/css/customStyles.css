@@ -208,7 +208,7 @@
 
 /* Background Images */
 .bgImage {
-    background-image: url('../img/fondo-02.svg');
+    background-image: url('../img/fondo-02.jpg');
     background-size: cover;
     background-position: top left;
     background-repeat:  no-repeat;
@@ -311,6 +311,7 @@
     background-color: var(--color-background);
     padding: 5px;
     border-radius: 20px;
+    border-top-left-radius: 0px;
     z-index: 0 !important;
 }
 .forma1::before {

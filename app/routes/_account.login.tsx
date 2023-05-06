@@ -83,3 +83,9 @@ export default function Login() {
         </Container>
     )
 }
+
+export function ErrorBoundary(error: Error){
+    return <Container className="bg-danger" fluid>
+        {error.message}
+    </Container>
+}
